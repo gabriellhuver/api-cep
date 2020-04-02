@@ -30,7 +30,7 @@ public class Cep {
 	@Column(nullable = true, length = 50)
 	private String bairro;
 
-	@OneToOne(targetEntity = Cidade.class, fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+	@OneToOne(targetEntity = Cidade.class, cascade = CascadeType.ALL)
 	private Cidade cidade;
 
 }
