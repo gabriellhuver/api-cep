@@ -47,3 +47,6 @@ Caso o CEP não exista, consultar o site http://viacep.com.br/ e realizar o cada
 ```json
 
 ```
+
+## Postman
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/d60a1cd86078e9dd1648)
