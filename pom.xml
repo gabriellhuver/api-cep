@@ -23,7 +23,14 @@
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -94,6 +101,14 @@
 			</plugin>
 
 			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>br.com.cep.CepApplication</mainClass>
+				</configuration>
+			</plugin>
+
+			<plugin>
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>jib-maven-plugin</artifactId>
 				<version>1.8.0</version>
@@ -110,7 +125,7 @@
 				<filtering>true</filtering>
 				<directory>src/main/resources</directory>
 				<includes>
-					<include>application.properties</include>
+					<include>application.yml</include>
 				</includes>
 			</resource>
 		</resources>

@@ -1,0 +1,25 @@
+version: '3.5'
+
+services:
+  pg-cep:
+    image: postgres:11-alpine
+    ports:
+      - 33060:3306
+    environment:
+      - POSTGRES_DB=dbcep
+      - POSTGRES_USER=usertest
+      - POSTGRES_PASSWORD=123
+      - PGPORT=3306
+  api-cep-java:
+    container_name: api-cep-java
+    build:
+      context: .
+      dockerfile: apiCep.Dockerfile
+    depends_on:
+      - pg-cep
+    ports:
+      - "8080:8080"
+    environment:
+      - NOOP=
+      - DB_URL=pg-cep
+      - DB_PORT=3306
