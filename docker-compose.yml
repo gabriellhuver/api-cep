@@ -14,7 +14,7 @@ services:
     container_name: api-cep-java
     build:
       context: .
-      dockerfile: apiCep.Dockerfile
+      dockerfile: cep.Dockerfile
     depends_on:
       - pg-cep
     ports:
