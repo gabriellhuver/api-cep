@@ -30,7 +30,7 @@ Caso o CEP não exista, consultar o site http://viacep.com.br/ e realizar o cada
 {"cep": "01001-000",
 "logradouro": "Praça da Sé",
 "complemento": "lado ímpar",
-"bairro": "Sé”,
+"bairro": "Sé",
 "cidade":{
 "ibge":"3550308",
 "uf": "SP",
