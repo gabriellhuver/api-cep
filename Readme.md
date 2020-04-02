@@ -27,15 +27,17 @@
 Caso o CEP não exista, consultar o site http://viacep.com.br/ e realizar o cadastro do cep e da cidade.
 #### Retorno
 ```json
-{"cep": "01001-000",
-"logradouro": "Praça da Sé",
-"complemento": "lado ímpar",
-"bairro": "Sé",
-"cidade":{
-"ibge":"3550308",
-"uf": "SP",
-"localidade": "São Paulo"
-}}
+{
+    "cep": "01001-010",
+    "logradouro": "Rua Filipe de Oliveira",
+    "complemento": "",
+    "bairro": "Sé",
+    "cidade": {
+        "ibge": "3550308",
+        "uf": "SP",
+        "localidade": "São Paulo"
+    }
+}
 ```
 ### Cep - Obter a lista de CEPs de uma cidade.
 	Tipo: GET
